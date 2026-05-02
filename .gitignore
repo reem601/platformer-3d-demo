@@ -1,0 +1,11 @@
+--2026-05-02 07:24:26--  https://raw.githubusercontent.com/github/gitignore/main/Godot.gitignore
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 258 [text/plain]
+Saving to: ‘Godot.gitignore’
+
+     0K                                                       100% 12.3M=0s
+
+2026-05-02 07:24:26 (12.3 MB/s) - ‘Godot.gitignore’ saved [258/258]
+
