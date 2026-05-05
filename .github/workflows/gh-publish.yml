@@ -1,8 +1,7 @@
 name: godot-ci
 on:
   push:
-    tags:
-      - "v*"
+    branches: [master]
 env:
   GODOT_VERSION: "4.6.2"
 
@@ -34,12 +33,12 @@ jobs:
     - name: create release
       uses: softprops/action-gh-release@v2
       with:
-        tag-name: ${{github.ref_name}}
-        name: Release ${{github.ref_name}}
+        tag-name: nightly
+        name: Nightly Build
         generate_release_notes: true
         files: builds/windows/*.exe
         make_latest: true
         draft: false
-        prerelease: false
+        prerelease: true
       env:
         GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
