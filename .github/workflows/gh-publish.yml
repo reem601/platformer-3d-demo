@@ -33,4 +33,7 @@ jobs:
         generateReleaseNotes: true
         tag: ${{github.ref_name}}
         artifacts: ${{steps.export.outouts.archive_directory}}/*
+        allowUpdates: true
+        replacesArtifacts: true
+        makeLatest: true
         artifactErrorsFailBuild: false
