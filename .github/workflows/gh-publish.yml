@@ -24,12 +24,12 @@ jobs:
         relative_project_path: ./
         cache: true
       env:
-       GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+       GITHUB_TOKEN: ${{vars.GH_TOKEN}}
 
     - name: create release
       uses: ncipollo/release-action@v1.18.0
       with:
-        token: ${{secrets.GH_TOKEN}}
+        token: ${{vars.GH_TOKEN}}
         generateReleaseNotes: true
         tag: ${{github.ref_name}}
         artifacts: ${{steps.export.outouts.archive_directory}}/*
