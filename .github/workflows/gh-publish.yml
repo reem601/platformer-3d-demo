@@ -42,5 +42,6 @@ jobs:
         make_latest: true
         draft: false
         prerelease: true
+        target_commitish: ${{github.sha}}
       env:
         GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
